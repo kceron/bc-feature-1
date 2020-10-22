@@ -16,6 +16,7 @@
         font-size: 1.5em;
         @media only screen and (max-width: $mobile) {
             text-align: left;
+            margin: 15px 10px;
         }
     }
 
@@ -36,9 +37,6 @@
         border-radius: 10px;
         display: grid;
         justify-content: center;
-        @media only screen and (max-width: $tablet) {
-            border-radius: unset;
-        }
         @media only screen and (max-width: $mobile) {
             background-color: transparent;
             box-shadow: none;
@@ -53,14 +51,16 @@
         grid-auto-flow: column;
         grid-gap: 10px;
         @media only screen and (max-width: $tablet) {
-        padding: 30px 0;
-        grid-auto-flow: row;
-        grid-gap: 10px;
-        display: grid;  
-        grid-template-columns: 200px 200px;  
-        // grid-row: auto auto;  
-        grid-column-gap: 10px;  
-        grid-row-gap: 10px;
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        
+        }
+        @media only screen and (max-width: $mobile) {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            padding-top: 0px;
         }
     }
 
