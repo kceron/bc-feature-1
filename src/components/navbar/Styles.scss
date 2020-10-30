@@ -3,7 +3,12 @@
 #navbarContainer{
   height: 50px;
   background: black;
+  // MODIFIED CHUNK BELOW
+  @media only screen and (max-width: $tablet) {
+      margin-bottom: 15px;
+  }
 }
+
 
 // MODIFIED BLOCK 
 #navbarContent{
@@ -12,12 +17,6 @@
   @media only screen and (max-width: $mobile) {
     display: flex;
     justify-content: center;
-  }
-}
-
-@media (max-width: $tablet) {
-  #navbarContainer{
-    margin-bottom: 15px;
   }
 }
 

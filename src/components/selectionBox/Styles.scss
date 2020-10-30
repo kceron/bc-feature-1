@@ -14,15 +14,16 @@
     &--image {display: block; width: inherit; padding-bottom: 8px;  }
     &--text {font-size: 1em; font-weight: 600;}
     input { position: absolute; left: 4px;}
-  }
-  
-  // MODIFIED FOR TILES TO FILL UP THE SCREEN
-  @media (max-width: $mobile) {
-    .selectionBox{
-      border-radius: 10px;
-      margin:3px; 
-      width:150px;
-      padding: 8px 8px 15px 8px;
-      border: solid 2px $elephant-paw;
+    
+    // MODIFIED FOR TILES TO FILL UP THE SCREEN
+    @media (max-width: $mobile) {
+      .selectionBox{
+       border-radius: 10px;
+       margin:3px; 
+       width:150px;
+       padding: 8px 8px 15px 8px;
+       border: solid 2px $elephant-paw;
     }
 }
+  }
+  
