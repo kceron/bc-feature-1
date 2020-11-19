@@ -3,18 +3,21 @@
 
 // MODIFIED BLOCK
 .submitButton{
-  text-align: center;
-  color: white;
-  line-height: 50px;
-  font-size: 20px;
-  border-radius: 25px;
-  font-weight: 600;
-  background-color: $grass-blade;
-  padding: 0 2em;
-  cursor: pointer;
-  @media only screen and (max-width: $mobile) {
-    padding: 0px;
-    width: 95%;
-    margin: 0px 10px;
-}
-}
+  background-color: $grass-blade;	  background-color: $grass-blade;
+  transition: background-color 100ms ease;
+  border-radius: $size / 2;	  border-radius: $size / 2;
+  color: white;	  color: white;
+  font-size: $size * .4;	  font-size: $size * .4;
+@@ -15,6 +16,11 @@ $size: 50px;
+  cursor: pointer;	  cursor: pointer;
+  @include flex-spacing(space-between);	  @include flex-spacing(space-between);
+
+
+  &:not(.enabled) {
+    pointer-events: none;
+    background-color: $elephant-paw;
+  }
+
+  &--label {	  &--label {
+    padding: 0 20px;	    padding: 0 20px;
+  }	  }
